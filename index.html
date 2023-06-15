@@ -32,13 +32,12 @@
 <body>
   <div class="container">
     <iframe id="game" src="./flora/index.html" width="100%"></iframe>
-    <input type="button" value="クリック" onclick="func1()" />
     <img class="item" src="Help.jpg" alt="help">
   </div>
 </body>
 <script>
         const game = document.getElementById("game");
-        function func1() {
+        game.onload = function () {
             const item =
                 game.contentWindow.document.getElementById("unity-canvas");
             item.style.height = "100%";
