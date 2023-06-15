@@ -3,14 +3,6 @@
 <head>
   <link rel="stylesheet" href="css/normalize.min.css">
   <style>
-    .game-style {
-        cursor: default;
-        max-height: 724px;
-        max-width: 1287px;
-        height: 100%;
-        width: 100%;
-    }
-
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -19,8 +11,14 @@
     }
     #game {
         aspect-ratio: 16 / 9;
+        margin: 0 auto;
+        max-height: 724px;
+        max-width: 1287px;
         height: 100%;
         width: 100%;
+    }
+    #game::-webkit-scrollbar {
+      display: none;
     }
     .item {
         margin: 0 auto;
