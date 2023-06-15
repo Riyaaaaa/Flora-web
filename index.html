@@ -41,7 +41,10 @@
         function func1() {
             const item =
                 game.contentWindow.document.getElementById("unity-canvas");
-            item.classList.add("game-style");
+            item.style.height = "100%";
+            item.style.width = "100%";
+            item.style.maxHeight = "724px";
+            item.style.maxWidth = "1287px";
             console.log("ok");
         }
   </script>
