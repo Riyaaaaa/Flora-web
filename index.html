@@ -3,22 +3,46 @@
 <head>
   <link rel="stylesheet" href="css/normalize.min.css">
   <style>
-    .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-      align-items: center;
+    .game-style {
+        cursor: default;
+        max-height: 724px;
+        max-width: 1287px;
+        height: 100%;
+        width: 100%;
     }
-    
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        align-items: center;
+    }
+    #game {
+        aspect-ratio: 16 / 9;
+        height: 100%;
+        width: 100%;
+    }
     .item {
-      width: 100%;
+        margin: 0 auto;
+        max-width: 900px;
+        width: 100%;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <iframe id="unity-iframe" src="./flora/index.html" width="100%"></iframe>
+    <iframe id="game" src="./flora/index.html" width="100%"></iframe>
+    <input type="button" value="クリック" onclick="func1()" />
     <img class="item" src="Help.jpg" alt="help">
   </div>
 </body>
+<script>
+        const game = document.getElementById("game");
+        function func1() {
+            const item =
+                game.contentWindow.document.getElementById("unity-canvas");
+            item.classList.add("game-style");
+            console.log("ok");
+        }
+  </script>
 </html>
