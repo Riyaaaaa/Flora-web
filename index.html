@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <style>
     .container {
         display: grid;
@@ -25,28 +26,60 @@
         max-width: 900px;
         width: 100%;
     }
+    .swiper--wrapper {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      color: #ffffff;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
   </style>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
   <div class="container">
     <iframe id="game" src="./flora/index.html" width="100%"></iframe>
-    <img class="item" src="Help.jpg" alt="help">
   </div>
+  <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Help1.jpg"></div>
+        <div class="swiper-slide"><img src="Help2.jpg"></div>
+        <div class="swiper-slide"><img src="Help3.jpg"></div>
+        <div class="swiper-slide"><img src="Help4.jpg"></div>
+      </div>
+    </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </body>
 <script>
-        const game = document.getElementById("game");
-        game.onload = function () {
-            const item =
-                game.contentWindow.document.getElementById("unity-canvas");
-            item.style.height = "100%";
-            item.style.width = "100%";
-            item.style.maxHeight = "718px";
-            item.style.maxWidth = "1287px";
+  const swiper = new Swiper(".swiper", {
+    pagination: {
+      el: ".swiper-pagination"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    loop: true,
+    autoHeight: true,
+  });
+  const game = document.getElementById("game");
+  game.onload = function () {
+      const item =
+          game.contentWindow.document.getElementById("unity-canvas");
+      item.style.height = "100%";
+      item.style.width = "100%";
+      item.style.maxHeight = "718px";
+      item.style.maxWidth = "1287px";
 
-            const body = game.contentWindow.document.body;
-            body.style.margin = "0px";
+      const body = game.contentWindow.document.body;
+      body.style.margin = "0px";
 
-            console.log("ok");
-        }
+      console.log("ok");
+  }
   </script>
 </html>
