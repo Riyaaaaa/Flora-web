@@ -11,6 +11,7 @@
     <type fullname="Trash.ScenarioMaster" preserve="all" />
     <type fullname="Trash.SoundList" preserve="all" />
     <type fullname="Trash.Garden.GardenAssetConfig/CellAssetConfig" preserve="nothing" serialized="true" />
+    <type fullname="Trash.SoundList/SoundEntry" preserve="nothing" serialized="true" />
     <type fullname="Trash.CharacterMaster/Parameter" preserve="nothing" serialized="true" />
     <type fullname="Trash.CombinedInlineCondition" preserve="nothing" serialized="true" />
     <type fullname="Trash.FurnitureAbility" preserve="nothing" serialized="true" />
