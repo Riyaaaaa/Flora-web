@@ -1,5 +1,6 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TouchHandleable" preserve="all" />
     <type fullname="Trash.CharacterMaster" preserve="all" />
     <type fullname="Trash.Condition" preserve="all" />
     <type fullname="Trash.ConversationMaster" preserve="all" />
@@ -8,17 +9,28 @@
     <type fullname="Trash.GardenExtensionItem" preserve="all" />
     <type fullname="Trash.Gift" preserve="all" />
     <type fullname="Trash.Home.Debug.HomeDebugPanel" preserve="all" />
+    <type fullname="Trash.Home.HomeCharacterAnimator" preserve="all" />
+    <type fullname="Trash.Localization.LocalizableTextView" preserve="all" />
+    <type fullname="Trash.Novel.MessageWriter" preserve="all" />
+    <type fullname="Trash.OpenBoxTutorial" preserve="all" />
     <type fullname="Trash.ScenarioMaster" preserve="all" />
     <type fullname="Trash.SoundList" preserve="all" />
+    <type fullname="Trash.ToggleView" preserve="all" />
+    <type fullname="Trash.TutorialDialog" preserve="all" />
+    <type fullname="Trash.TutorialSequence" preserve="all" />
     <type fullname="Trash.Garden.GardenAssetConfig/CellAssetConfig" preserve="nothing" serialized="true" />
+    <type fullname="Trash.Localization.LocalizableStringEntry" preserve="nothing" serialized="true" />
     <type fullname="Trash.SoundList/SoundEntry" preserve="nothing" serialized="true" />
     <type fullname="Trash.CharacterMaster/Parameter" preserve="nothing" serialized="true" />
     <type fullname="Trash.CombinedInlineCondition" preserve="nothing" serialized="true" />
     <type fullname="Trash.FurnitureAbility" preserve="nothing" serialized="true" />
     <type fullname="Trash.Garden.CellRow" preserve="nothing" serialized="true" />
     <type fullname="Trash.InlineCondition" preserve="nothing" serialized="true" />
-    <type fullname="Trash.Localization.LocalizableStringEntry" preserve="nothing" serialized="true" />
     <type fullname="Trash.RequirementMaster" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="SimpleAnimationComponent, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="SimpleAnimation" preserve="all" />
+    <type fullname="SimpleAnimation/EditorState" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
@@ -40,6 +52,10 @@
     <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
   </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AudioClip" preserve="all" />
   </assembly>
@@ -52,15 +68,23 @@
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
     <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
     <type fullname="UnityEngine.UI.Mask" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
@@ -74,6 +98,7 @@
     <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextCoreFontEngineModule">
