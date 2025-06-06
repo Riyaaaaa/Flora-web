@@ -6,7 +6,7 @@
     <title>Unity Web Player | Flora</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=800 height=450 tabindex="-1" style="width: 800px; height: 450px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1600 height=900 tabindex="-1" style="width: 1600px; height: 900px; background: #231F20"></canvas>
     <script src="Build/Flora-web.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/Flora-web.data.gz",
-        frameworkUrl: "Build/Flora-web.framework.js.gz",
-        codeUrl: "Build/Flora-web.wasm.gz",
+        dataUrl: "Build/Flora-web.data.unityweb",
+        frameworkUrl: "Build/Flora-web.framework.js.unityweb",
+        codeUrl: "Build/Flora-web.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SuyaSuyaFactory",
         productName: "Flora",
