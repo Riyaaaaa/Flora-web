@@ -1,6 +1,6 @@
 # Flora
 
-Already published unity room.
+It has already been published in unity room.
 
 https://unityroom.com/games/flora_s
 
